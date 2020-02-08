@@ -1,0 +1,59 @@
+PROGRAMMING LOGIC - Answer Victor
+
+
+Question 1
+
+A farmer lives on next to a river. 
+One day, he crosses the river in a small boat and purchases a fox, a chicken, and a bag of seeds. 
+When the farmer returns to his boat to cross the river again and go home, he realizes he has a problem.
+The farmer can only take one item in his small boat at a time, otherwise he risks capsizing. 
+He cannot leave the fox alone with the chicken, because the fox will eat the chicken. 
+He cannot leave the chicken alone with the seeds, because the chicken with eat the seeds.
+How does the farmer successfully get all three items across the river?
+
+
+It can be done in 7 steps. The diagram ilustrates the order and the moves done:
+
+(F(_) - Farmer carring something, Fx - Fox, Cn - Chicken and Bs - Bag of seeds)
+
+0. F(Cn),Fx,Bs	- .
+1. Fx,Bs		- F(Cn)
+2. Fx,Bs,F()	- Cn
+3. Bs			- F(Fx),Cn
+4. Bs,F(Cn)	- Fx
+5. Cn			- F(Bs),Fx
+6. Cn,F()		- Fx,Bs
+7. .			- F(Cn),Fx,Bs 
+
+
+Question 2
+
+You own a factory that labels and boxes apples and oranges for shipping. 
+One day, the labeling machine malfunctions and incorrectly labels the containers of fruit.
+Your coworker decides to play a game. 
+He pulls up three crates and tells you that one of them has apples, one has oranges,and the last one has both apples and oranges in it. 
+You can see that one is labeled "A" for apples, another "O" for oranges, and the third "A+O" for both apples and oranges. 
+Your coworker reminds you that all three crates are incorrectly labeled.
+You get to pick one crate, and your coworker will pull a fruit out of it and show you what it is. 
+You get to do this only one time. 
+How can you determine, without a doubt, which crate has apples, which one has oranges, and which one has both?
+
+If it is guaranteed that all crates are incorrectly labeled, I must ask him to pick one fruit from the crate labeled (A+O),because it will define wich fruit this box has.
+
+Crate1(Label:A)=> Has O or A+O
+Crate2(Label:O)=> Has A or A+O
+Crate3(Label:A+O)=> Has A or O
+
+If the picked fruit is an A:
+
+Crate1(Label:A)=> Has O 
+Crate2(Label:O)=> Has A+O
+Crate3(Label:A+O)=> Has A
+ 
+If the picked fruit is an O:
+
+Crate1(Label:A)=> Has A+O 
+Crate2(Label:O)=> Has A
+Crate3(Label:A+O)=> Has O
+
+
