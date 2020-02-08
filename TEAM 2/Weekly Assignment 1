@@ -1,6 +1,6 @@
 PROGRAMMING LOGIC 
 
-Question 1
+-> Question 1
 
 Marina:
 First, the farmer should take the chicken across the river, leaving the fox and the seeds behind.
@@ -8,11 +8,21 @@ Then he should go back and take the fox, when he arrives at the destination he s
 Then he should leave the chicken on the origin and take the bag of seeds with him to the destination.
 With the fox and the seeds already across the river he can come back and take the chicken and finally get all three items across the river.
 
+Matheus:
+In order to get all the items across the river, the farmer must follow these steps, considering that all the items starts at side 1 of the river and goes to side 2:
+1- take the chicken across the river to side 2, leaving the fox and the seeds behind at side 1. 
+2- go back to side 1 and take the fox, then grab the chicken at side 2 e take it back to side 1, leaving the fox alone at side 2. 
+3- take the seeds from side 1 to side 2. Now we have the fox and the seeds at side 2 and only the chicken at side 1. 
+4- go back to side 1 and take the chicken to side 2, accomplishing the task. 
 
-Question 2
+
+-> Question 2
 
 Marina:
 I have to pick first the crate labeled "A+O", as all of them are incorrectly labeled, the container will have inside only the fruit shown by my coworker, for example: only oranges.
 Then the other two crates will have to have their label changed.
 The one that was labeled "O" will only have the option to be filled with apples, and the one labeled "A" will have to be filled with both fruits.
 If I chose to see one crate that only had one fruit labeled, and was shown a different fruit, I would never be able to know if it had inside just the fruit I saw, or both.
+
+Matheus:
+Considering that all the boxes are incorrectly labeled, we must pick the "A+O" crate. In this way, when we pull a fruit out of it we will know the correct label of all three crates. Example: "A+O" = orange, then at the "O" crate we can only have apples and at "A" crate we can only have mixed fruits. 
