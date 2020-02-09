@@ -1,0 +1,43 @@
+PROGRAMMING LOGIC
+
+
+Question 1
+
+A farmer lives on next to a river. 
+One day, he crosses the river in a small boat and purchases a fox, a chicken, and a bag of seeds. 
+When the farmer returns to his boat to cross the river again and go home, he realizes he has a problem.
+The farmer can only take one item in his small boat at a time, otherwise he risks capsizing. 
+He cannot leave the fox alone with the chicken, because the fox will eat the chicken. 
+He cannot leave the chicken alone with the seeds, because the chicken with eat the seeds.
+How does the farmer successfully get all three items across the river?
+
+1º : Take the chicken to the other side of the river and come back
+2º : Take the seeds to the the other side of the river and come back with the chicken
+3º : Leave the chicken, take the fox to the other side of the river and come back
+4º : Take the chicken to the other side of the river
+
+
+
+Question 2
+
+You own a factory that labels and boxes apples and oranges for shipping. 
+One day, the labeling machine malfunctions and incorrectly labels the containers of fruit.
+Your coworker decides to play a game. 
+He pulls up three crates and tells you that one of them has apples, one has oranges,and the last one has both apples and oranges in it. 
+You can see that one is labeled "A" for apples, another "O" for oranges, and the third "A+O" for both apples and oranges. 
+Your coworker reminds you that all three crates are incorrectly labeled.
+You get to pick one crate, and your coworker will pull a fruit out of it and show you what it is. 
+You get to do this only one time. 
+How can you determine, without a doubt, which crate has apples, which one has oranges, and which one has both?
+
+Solution:
+As we know that all the boxes are incorrectly labeled, we know that: 
+      Box labeled 'A' contain Oranges or 'Oranges and Apples'
+      Box labeled 'O' contain Apples or 'Oranges and Apples'
+      Box labeled 'A + O' contain Apples or Oranges
+
+Choose the box that's labeled 'A+O'.
+
+   Case 1: Your coworker pulls an Orange. As a consequence, it contains only Oranges. Then we know that the box labeled 'A' contains 'Oranges and Apples' and therefore box 'O' contains Apples
+
+   Case 2: Your coworker pulls an Apple. As a consequence, it contains only Apples. Then we know that the box labeled 'O' contains 'Oranges and Apples' and therefore box 'A' contains Oranges
