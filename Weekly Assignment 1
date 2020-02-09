@@ -11,7 +11,10 @@ He cannot leave the fox alone with the chicken, because the fox will eat the chi
 He cannot leave the chicken alone with the seeds, because the chicken with eat the seeds.
 How does the farmer successfully get all three items across the river?
 
-
+1º : Take the chicken to the other side of the river and come back
+2º : Take the seeds to the the other side of the river and come back with the chicken
+3º : Leave the chicken, take the fox to the other side of the river and come back
+4º : Take the chicken to the other side of the river
 
 
 
@@ -26,3 +29,15 @@ Your coworker reminds you that all three crates are incorrectly labeled.
 You get to pick one crate, and your coworker will pull a fruit out of it and show you what it is. 
 You get to do this only one time. 
 How can you determine, without a doubt, which crate has apples, which one has oranges, and which one has both?
+
+Solution:
+As we know that all the boxes are incorrectly labeled, we know that: 
+      Box labeled 'A' contain Oranges or 'Oranges and Apples'
+      Box labeled 'O' contain Apples or 'Oranges and Apples'
+      Box labeled 'A + O' contain Apples or Oranges
+
+Choose the box that's labeled 'A+O'.
+
+   Case 1: Your coworker pulls an Orange. As a consequence, it contains only Oranges. Then we know that the box labeled 'A' contains 'Oranges and Apples' and therefore box 'O' contains Apples
+
+   Case 2: Your coworker pulls an Apple. As a consequence, it contains only Apples. Then we know that the box labeled 'O' contains 'Oranges and Apples' and therefore box 'A' contains Oranges
