@@ -1,0 +1,24 @@
+Exercise 1:
+
+Step 1: Take the chicken to the other side of the river and come back alone.
+Step 2: Take the fox to the other side and come back with the chicken.
+Step 3: Leave the chicken on the first side and bring the seeds to the fox side.
+Step 4: Take the chicken to the other side.
+
+
+Exercise 2:
+
+Take 'fruit' from O+A {
+  If (fruit == apple){
+    O+A = A;
+    O = O+A;
+    A = 0;
+    }
+    
+  Else {
+    O+A = O;
+    A = O+A;
+    O = A;
+  }
+ }
+© 2020 GitHub, Inc.
