@@ -12,7 +12,16 @@ He cannot leave the chicken alone with the seeds, because the chicken with eat t
 How does the farmer successfully get all three items across the river?
 
 
-TESTE
+Considering "Side A" the one where the farmer is, and "Side B" the one where his house is, it should be done as follows:
+
+Chicken from Side A to Side B, leaving both the fox and the seeds on Side A;
+Go back to Side A with empty boat, leaving the chicken in Side B;
+Fox from Side A to Side B, leaving the seeds on Side A;
+The Chicken from Side B to Side A, leaving the fox alone in Side B;
+The Seeds from Side A to Side B, leaving the Chicken alone in Side A;
+Go back to side A with empty boat, leaving both the fox and the seeds on Side B;
+The Chicken from Side A to Side B, finishing the job.
+
 
 
 Question 2
@@ -26,3 +35,8 @@ Your coworker reminds you that all three crates are incorrectly labeled.
 You get to pick one crate, and your coworker will pull a fruit out of it and show you what it is. 
 You get to do this only one time. 
 How can you determine, without a doubt, which crate has apples, which one has oranges, and which one has both?
+
+
+You choose the crate with the "A+O" label to pick a fruit. Suppose it is an Apple, then its label should be "A", because as all labels are wrong and this is the crate labeled "A+O", it can only be the crate "A".
+Given this, there are two crates left: one with oranges, and onde with apples+oranges. And you have two labels left: O and A. Considering that all crates have the wrong label, the oranges crate will be labeled "A", and the mixed crate will be labeled "O".
+The same process would work if you have picked an Orange instead of an Apple in the crate labeled "A+O".
