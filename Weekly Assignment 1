@@ -12,6 +12,7 @@ He cannot leave the chicken alone with the seeds, because the chicken with eat t
 How does the farmer successfully get all three items across the river?
 
 
+<<<<<<< HEAD
 Considering "Side A" the one where the farmer is, and "Side B" the one where his house is, it should be done as follows:
 
 Chicken from Side A to Side B, leaving both the fox and the seeds on Side A;
@@ -21,6 +22,8 @@ The Chicken from Side B to Side A, leaving the fox alone in Side B;
 The Seeds from Side A to Side B, leaving the Chicken alone in Side A;
 Go back to side A with empty boat, leaving both the fox and the seeds on Side B;
 The Chicken from Side A to Side B, finishing the job.
+=======
+>>>>>>> parent of ec280af... Update Weekly Assignment 1
 
 
 
