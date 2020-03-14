@@ -22,7 +22,10 @@ data_sku_dic = pd.read_excel("F:\Paulo\Documents\GitHub\Trainee-Python-Course-20
 vendas_aux = data_hyperbulk[['日期', 'ATOM编码', 'SKU Name']]
 vendas_aux = vendas_aux.rename(columns= {'日期':'Date','ATOM编码':'SKU_ID','SKU Name':'SKU_Name'})
 
-#Criando a coluna chave para fazer a contagem
+SKU_aux = data_sku_dic[['ABM EXPORT ID', 'EXW (NR)']]
+SKU_aux = SKU_aux.rename(columns= {'ABM EXPORT ID':'SKU_ID','EXW (NR)':'EXW'})
+
+#Criando a coluna chave para fazer a contagem de linhas em que aparece uma combinação data-sku
 
 vendas_aux['Chave'] = vendas_aux.Date.astype(str).str.cat(vendas_aux.SKU_ID.astype(str), sep='_')
 
@@ -30,9 +33,15 @@ vendas_aux['Chave'] = vendas_aux.Chave.astype(str).str.cat(vendas_aux.SKU_Name.a
 
 # print(vendas_aux)
 
+#contagem das linhas
+
 qtd_vendida = vendas_aux.pivot_table(index=['Chave'], aggfunc='size')
 
-print(qtd_vendida)
+qtd_vendida.columns = ['Chave', 'QTD_VENDIDA']
+
+#print(qtd_vendida.columns)
+
+#tab_final = qtd_vendida.merge(vendas_aux,left_on= 'Chave', right_on= 'Chave')
 
 
 
