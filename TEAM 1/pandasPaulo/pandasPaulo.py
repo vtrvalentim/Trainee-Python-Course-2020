@@ -6,8 +6,8 @@ pd.option_context('display.max_rows', 400, 'display.max_columns', 400)
 
 #IMPORTANDO PLANILHAS#
 
-data_hyperbulk = pd.read_excel("F:\Paulo\Documents\GitHub\Trainee-Python-Course-2020\TEAM 1\pandasPaulo\Hyperbulk_input_v3.xlsx")
-data_sku_dic = pd.read_excel("F:\Paulo\Documents\GitHub\Trainee-Python-Course-2020\TEAM 1\pandasPaulo\SKU_dictionary.xlsx")
+data_hyperbulk = pd.read_excel('Hyperbulk_input_v3.xlsx')
+data_sku_dic = pd.read_excel('SKU_dictionary.xlsx')
 
 # #VERIFICANDO CONTEUDO DAS COLUNAS
 # #
@@ -37,28 +37,7 @@ teste_cont = teste_cont.rename(columns= {'size':'QTD_VENDIDA','sum':'Total EXW'}
 
 teste_cont.to_excel('tabela_final.xlsx')
 
-# teste_cont2 = pd.pivot_table(vendas_aux, index=['Date', 'SKU_ID', 'SKU_Name'], aggfunc='size')
-# teste_cont2 = teste_cont2.rename('QTD_VENDIDA')
-# teste_cont2 = teste_cont2.to_frame()
-
-# print(teste_cont)
-#
-# teste_cont = pd.pivot_table(vendas_aux, index=['Date', 'SKU_ID', 'SKU_Name'], aggfunc='size')
-#
-# teste_cont = teste_cont.rename('QTD_VENDIDA')
-#
-# teste_cont = teste_cont.to_frame()
-#
-# print(teste_cont)
-#
-# tab_final = teste_cont.merge(SKU_aux,left_on= 'SKU_ID', right_on= 'SKU_ID')
-
-
-
-
 # print(tab_final)
-
-
 
 # ----------------------------------------------------------------------------------------------
 #
