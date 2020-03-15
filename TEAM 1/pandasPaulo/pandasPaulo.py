@@ -4,8 +4,8 @@ import numpy as np
 
 #IMPORTANDO PLANILHAS#
 
-data_hyperbulk = pd.read_excel("F:\Paulo\Documents\GitHub\Trainee-Python-Course-2020\TEAM 1\pandasPaulo\Hyperbulk_input_v3.xlsx")
-data_sku_dic = pd.read_excel("F:\Paulo\Documents\GitHub\Trainee-Python-Course-2020\TEAM 1\pandasPaulo\SKU_dictionary.xlsx")
+data_hyperbulk = pd.read_excel('Hyperbulk_input_v3.xlsx')
+data_sku_dic = pd.read_excel('SKU_dictionary.xlsx')
 
 # #VERIFICANDO CONTEUDO DAS COLUNAS
 # #
@@ -35,11 +35,12 @@ print(type(vendas_aux))
 
 #contagem das linhas
 
-qtd_vendida = vendas_aux.pivot_table(index=['Chave'], aggfunc='size')
+qtd_vendida = vendas_aux.pivot_table(index=['Chave'], columns=['Count'], aggfunc='size')
 
-qtd_vendida.columns = ['Chave', 'QTD_VENDIDA']
+qtd_vendida.to_excel('teste.xls')
+#qtd_vendida.columns = ['Chave', 'QTD_VENDIDA']
 
-print(type(qtd_vendida))
+
 
 #tab_final = qtd_vendida.merge(vendas_aux,left_on= 'Chave', right_on= 'Chave')
 
