@@ -2,8 +2,6 @@
 import pandas as pd
 import numpy as np
 
-pd.option_context('display.max_rows', 400, 'display.max_columns', 400)
-
 #IMPORTANDO PLANILHAS#
 
 data_hyperbulk = pd.read_excel('Hyperbulk_input_v3.xlsx')
