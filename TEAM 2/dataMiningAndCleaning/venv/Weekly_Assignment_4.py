@@ -28,3 +28,14 @@ print(final_table)
 writer = ExcelWriter('PythonExport.xlsx')
 final_table.to_excel(writer)
 writer.save()
+
+final_table_compiled = final_table.pivot_table(values= 'EXW (NR)', index=['Date', 'SKU Name'], aggfunc=np.sum )
+
+final_table_compiled = final_table_compiled.rename(columns= {'sum':'Total EXW'})
+writer2 = ExcelWriter('CompiledTable.xlsx')
+final_table_compiled.to_excel(writer2)
+writer2.save()
+
+
+
+
