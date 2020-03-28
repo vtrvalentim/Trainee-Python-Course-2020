@@ -16,9 +16,11 @@ compiled_table = aux_sku.merge(aux_hb,left_on = 'ABM EXPORT ID', right_on = 'ATO
 compiled_table = compiled_table.rename(columns= {'ABM EXPORT ID':'ID', 'SKU Description':'SKU','EXW (NR)':'EXW','日期':'Date'})
 compiled_table = compiled_table.drop(axis=1, labels='ATOM编码')
 
+teste = compiled_table.iloc[0]['EXW']
+print(type(teste),teste)
+
 count_table = compiled_table.pivot_table(values= 'EXW', index=['Date', 'ID', 'SKU'], aggfunc= ('size', np.sum))
 
-print(count_table)
 
 count_table = count_table.rename(columns= {'size':'Units sold', 'sum':'Total EXW'})
 
