@@ -13,10 +13,12 @@ def instaSolve (val,arg):
         print("Error in single value operation.")
         pass
 def solve(operations):
+    numop = int(len(operations)/2)
+    print('Número de operações: ', numop)
     x = operations.pop(0)
-    y = 0
+    i = 0
 
-    for i in operations:
+    while i < numop:
         print(operations)
         print("Resultado parcial: ",x)
         op = operations.pop(0)
@@ -34,4 +36,5 @@ def solve(operations):
         elif op == '/':
             x /= y
 
+        i+=1
     return x

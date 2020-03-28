@@ -76,6 +76,7 @@ def read(arg):
             operation.append(val)
             displayOp.insert(tk.END, val)
             displayOp.insert(tk.END, ' ')
+            print(operation)
             ans = c.solve(operation)
             operation = []
             displayOp.delete("1.0", tk.END)
@@ -84,27 +85,27 @@ def read(arg):
     else:
         pass
 
-    print(operation)
-
     return
 
 
 #Widgets definition
 displayOp= tk.Text(main_frame,bg='#d9d9d9',relief='flat', height=1, width= 20)
+displayOp.configure(font=('Arial',20))
 displayResult= tk.Text(main_frame,bg='#d9d9d9',relief='flat', height=1, width= 20)
+displayResult.configure(font=('Arial',24,'bold'))
 
-button_0 = tk.Button(main_frame, text='0', bg='#f1f1f1', relief='flat', command= lambda: read('0'))
-button_1 = tk.Button(main_frame, text='1', bg='#f1f1f1', relief='flat', command= lambda: read('1'))
-button_2 = tk.Button(main_frame, text='2', bg='#f1f1f1', relief='flat', command= lambda: read('2'))
-button_3 = tk.Button(main_frame, text='3', bg='#f1f1f1', relief='flat', command= lambda: read('3'))
-button_4 = tk.Button(main_frame, text='4', bg='#f1f1f1', relief='flat', command= lambda: read('4'))
-button_5 = tk.Button(main_frame, text='5', bg='#f1f1f1', relief='flat', command= lambda: read('5'))
-button_6 = tk.Button(main_frame, text='6', bg='#f1f1f1', relief='flat', command= lambda: read('6'))
-button_7 = tk.Button(main_frame, text='7', bg='#f1f1f1', relief='flat', command= lambda: read('7'))
-button_8 = tk.Button(main_frame, text='8', bg='#f1f1f1', relief='flat', command= lambda: read('8'))
-button_9 = tk.Button(main_frame, text='9', bg='#f1f1f1', relief='flat', command= lambda: read('9'))
-button_signal = tk.Button(main_frame, text='+/-', bg='#f1f1f1', relief='flat', command= lambda: read('sig'))
-button_comma = tk.Button(main_frame, text=',', bg='#f1f1f1', relief='flat', command= lambda: read('.'))
+button_0 = tk.Button(main_frame, text='0', bg='#ffffff', relief='flat', command= lambda: read('0'))
+button_1 = tk.Button(main_frame, text='1', bg='#ffffff', relief='flat', command= lambda: read('1'))
+button_2 = tk.Button(main_frame, text='2', bg='#ffffff', relief='flat', command= lambda: read('2'))
+button_3 = tk.Button(main_frame, text='3', bg='#ffffff', relief='flat', command= lambda: read('3'))
+button_4 = tk.Button(main_frame, text='4', bg='#ffffff', relief='flat', command= lambda: read('4'))
+button_5 = tk.Button(main_frame, text='5', bg='#ffffff', relief='flat', command= lambda: read('5'))
+button_6 = tk.Button(main_frame, text='6', bg='#ffffff', relief='flat', command= lambda: read('6'))
+button_7 = tk.Button(main_frame, text='7', bg='#ffffff', relief='flat', command= lambda: read('7'))
+button_8 = tk.Button(main_frame, text='8', bg='#ffffff', relief='flat', command= lambda: read('8'))
+button_9 = tk.Button(main_frame, text='9', bg='#ffffff', relief='flat', command= lambda: read('9'))
+button_signal = tk.Button(main_frame, text='+/-', bg='#ffffff', relief='flat', command= lambda: read('sig'))
+button_comma = tk.Button(main_frame, text=',', bg='#ffffff', relief='flat', command= lambda: read('.'))
 
 button_plus = tk.Button(main_frame, text='+', bg='#f1f1f1', relief='flat', command= lambda: read('+'))
 button_minus = tk.Button(main_frame, text='-', bg='#f1f1f1', relief='flat', command= lambda: read('-'))
